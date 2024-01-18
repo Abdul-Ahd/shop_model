@@ -8,16 +8,16 @@ async function auth(ps, ur) {
   const data = await response.json();
   const found = data.find((item) => item.user === ur);
   if (!found) {
-    alert("Incorrect user");
+    console.log("Incorrect user");
     return 0;
   } else {
     const { user, pw } = found;
 
     if (pw === ps) {
-      alert("login aproved");
+      console.log("login aproved");
       return 1;
     } else {
-      alert("incorrect Password");
+      console.log("incorrect Password");
       return 0;
     }
   }

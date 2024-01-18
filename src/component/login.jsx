@@ -9,6 +9,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { CookiesProvider, useCookies } from "react-cookie";
 import App from "../App";
 import { FaUserCircle, FaLock } from "react-icons/fa";
+import { SnackbarProvider, enqueueSnackbar } from "notistack";
 
 const Login = () => {
   const [cookies, setCookie] = useCookies(["user"]);
