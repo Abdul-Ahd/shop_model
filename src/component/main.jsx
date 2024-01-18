@@ -6,6 +6,7 @@ import Sidebar from "./menu/sidebar";
 import Dashborad from "./menu/dashborad";
 import Item from "./menu/item";
 import User from "./menu/user";
+import Sale from "./menu/sale";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import { CookiesProvider, useCookies } from "react-cookie";
 import "./main.css";
@@ -34,6 +35,7 @@ const main = () => {
           <Sidebar>
             <Routes>
               <Route path="/dashborad" element={<Dashborad />} />
+              <Route path="/sale" element={<Sale />} />
               <Route path="/item" element={<Item />} />
               <Route path="/user" element={<User />} />
             </Routes>

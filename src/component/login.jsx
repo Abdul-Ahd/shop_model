@@ -8,6 +8,7 @@ import { log } from "../hook/auth";
 import { Dialog, Transition } from "@headlessui/react";
 import { CookiesProvider, useCookies } from "react-cookie";
 import App from "../App";
+import { FaUserCircle, FaLock } from "react-icons/fa";
 
 const Login = () => {
   const [cookies, setCookie] = useCookies(["user"]);
@@ -33,41 +34,44 @@ const Login = () => {
   }
   return (
     <>
-      <div id="main">
-        <div align="center" margin-top="850" id="fm">
-          <form id="f1">
-            <h1 className="text-3xl font-bold text-black-100">Welcome</h1>
-            <br />
-            <label hrmlfor="user" className="text-2xl font-semibold">
-              Username:{" "}
-            </label>
-            <input
-              className=" text-justify text-2xl"
-              type="text"
-              name="user"
-              id="user"
-              onChange={(e) => setuser(e.target.value)}
-            />
-            <br />
-            <br />
-            <label className="text-2xl font-semibold" hrmlfor="password">
-              Password:{" "}
-            </label>
-            <input
-              className=" text-justify text-2xl "
-              type="password"
-              name="password"
-              id="password"
-              onChange={(e) => setpw(e.target.value)}
-            />
-            <br />
-            <br />
-            <button id="btn1" className="hover:text-2xl" onClick={check}>
-              Login
-            </button>
-          </form>
+      <body className="bodylog">
+        <div className="wrapper">
+          <div className="form-box login">
+            <h2>Welcome</h2>
+            <form action="#">
+              <br />
+              <div className="input-box">
+                <FaUserCircle className="icon" />
+
+                <input
+                  type="Text"
+                  id="user"
+                  onChange={(e) => setuser(e.target.value)}
+                  required
+                />
+                <label>UserName</label>
+              </div>
+              <br />
+              <div className="input-box">
+                <FaLock className="icon" />
+
+                <input
+                  type="password"
+                  id="password"
+                  onChange={(e) => setpw(e.target.value)}
+                  required
+                />
+                <label>Password</label>
+              </div>
+              <br />
+
+              <button id="btn1" className="hover:text-2xl" onClick={check}>
+                LogIn
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
+      </body>
     </>
   );
 };

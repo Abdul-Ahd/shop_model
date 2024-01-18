@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
 }
+
 #root {
   align-items: stretch;
   background: linear-gradient(-45deg, #082bf6, #18b5e9);
@@ -67,6 +68,7 @@ main {
 .btn {
   display: flex;
   color: #fff;
+  background-color: transparent;
   padding: 10px 15px;
   gap: 15px;
   transition: all 0.5s;
@@ -106,5 +108,12 @@ main {
   align-items: stretch;
 }
 #createuser1 {
-  align-items: stretch;
+  background-size: cover;
+  display: flex;
+
+  min-height: 80vh;
+  grid-template-rows: 1fr minmax(auto, 1fr) 1fr;
+  height: 20vh;
+
+  background-position: center;
 }

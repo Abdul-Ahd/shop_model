@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { FaTh, FaUserEdit, FaBars } from "react-icons/fa";
-import { MdOutlineInventory } from "react-icons/md";
+import { MdOutlineInventory, MdOutlinePointOfSale } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { log, getCookie } from "../../hook/auth";
 import { CiMenuKebab, CiLogout } from "react-icons/ci";
 import { CookiesProvider, useCookies } from "react-cookie";
+
 const sidebar = ({ children }) => {
   const [cookie, , removeCookie] = useCookies(["user"]);
   const [isopen, setisopen] = useState(false);
@@ -31,6 +32,11 @@ const sidebar = ({ children }) => {
       path: "/dashborad",
       name: "DashBorad",
       icon: <FaTh />,
+    },
+    {
+      path: "/Sale",
+      name: "Sale's",
+      icon: <MdOutlinePointOfSale />,
     },
     {
       path: "/item",
