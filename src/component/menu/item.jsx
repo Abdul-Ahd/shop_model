@@ -82,10 +82,10 @@ const Item = (e) => {
           headers: { "Content-Type": "application/json" },
         });
         if (response.ok) {
-          // The item was successfully deleted
+        
           console.log(`Item ${id1} deleted successfully`);
         } else {
-          // Handle error response
+          
           const data = await response.json();
           console.error(`Error in deleting item ${id1}: ${data.error}`);
         }
@@ -308,6 +308,7 @@ const Item = (e) => {
       buyer: 0,
     },
   ]);
+
   useEffect(() => {
     // Fetch data from the server to update the grid
     const fetchData = async () => {

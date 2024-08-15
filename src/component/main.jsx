@@ -7,6 +7,7 @@ import Dashborad from "./menu/dashborad";
 import Item from "./menu/item";
 import User from "./menu/user";
 import Sale from "./menu/sale";
+import Test from "./menu/test";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import { CookiesProvider, useCookies } from "react-cookie";
 import "./main.css";
@@ -38,6 +39,7 @@ const main = () => {
               <Route path="/sale" element={<Sale />} />
               <Route path="/item" element={<Item />} />
               <Route path="/user" element={<User />} />
+              <Route path="/test" element={<Test />} />
             </Routes>
           </Sidebar>
         </BrowserRouter>

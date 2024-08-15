@@ -1,0 +1,75 @@
+.form-container {
+  position: absolute;
+  margin-top: 50px; /* Adjust as needed */
+  display: block;
+  justify-content: center;
+  margin-left: 400px;
+}
+.netsale {
+  margin-top: 70px;
+  margin-left: 900px;
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 200px;
+  padding: 20px;
+  border: 1px solid #070707;
+  border-radius: 30px;
+  backdrop-filter: blur(50px);
+  background-color: #74747552;
+}
+.search {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  color: #070707;
+}
+.my-form {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 700px;
+  padding: 20px;
+  border: 1px solid #070707;
+  border-radius: 30px;
+  backdrop-filter: blur(50px);
+  background-color: #74747552;
+}
+#sale {
+  margin-top: 180px; /* Adjust as needed */
+  display: block;
+  justify-content: center;
+  margin-left: 400px;
+  position: relative;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+.mnu {
+  height: 50px;
+  color: #f7f7f7;
+  background-color: rgb(0, 0, 0);
+}
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+#combo-box {
+  color: #080808;
+}
+.MuiAutocomplete-option {
+  background-color: transparent !important;
+}
+.MuiAutocomplete-option.Mui-focused {
+  color: rgb(0, 0, 0);
+  font-weight: bold !important;
+  background: #625c5c !important;
+}

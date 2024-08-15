@@ -48,6 +48,11 @@ const sidebar = ({ children }) => {
       name: "User",
       icon: <FaUserEdit />,
     },
+    {
+      path: "/test",
+      name: "Test",
+      icon: <FaUserEdit />,
+    },
   ];
   return (
     <div className="container">
